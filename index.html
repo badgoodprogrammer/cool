@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do not login</title>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <input  type="text" aria-label="username" placeholder="username" id="username"><br>
+    <button type="button" onclick="enter_login()">submit</button>
+    <script>
+        function enter_login(){
+                    const encryptionkey = document.getElementById("username").value;
+                    const crypted_secret = "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"
+                    const secret = CryptoJS.AES.decrypt(crypted_secret, encryptionkey).toString(CryptoJS.enc.Utf8);
+                    document.open();
+                    document.write(secret);
+                    document.close();
+        }
+
+    
+    </script>
+    <style>
+        input,
+        textarea,
+        select{
+            font-size: 16px;
+        }
+        input{
+            border-radius: 10cap;
+            border-color: rgb(200, 255, 0);
+            border-style:inset;
+            line-height: 20px;
+            margin-bottom: 2%;
+            border-width: 3px;
+            transition: ease-in-out 0.7s;
+        }
+    </style>
+</body>
+</html>
